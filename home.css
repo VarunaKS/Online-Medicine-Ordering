@@ -1,0 +1,60 @@
+body{
+margin:0 0 0 0;
+}
+.pimg1{
+	position:relative;
+	
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+background-image:url('newhome.jpeg');
+	height:720px;
+	width:100%;
+	opacity:0.9;
+	font-family:lato,sans-serif;
+	
+}
+#key>li a{
+	transition:none;
+	text-align:center;
+	margin-left:400px;
+	padding:5px;
+	border-radius:15px;
+	background-color:#00ccff;
+	width:0;
+}
+.container{
+width:100%;
+margin:0 0 0 0;
+
+}
+header::after{
+	content:'';
+	display:table;
+	clear:both;
+	
+}
+nav ul{margin:0;list-style:none;padding:0;}
+nav a{text-decoration:none;font-size:25px;color:white;//#00ccff;}
+nav li{display:inline-block;
+margin-left:70px;
+padding-top:30px;
+position:relative;}
+nav a:hover{
+	color:#000099;
+}
+nav a::before{
+	content:'';
+	display:block;
+	height:5px;
+	width:100%;
+	background-color:#00ccff;
+	position:absolute;
+	top:0;
+	width:0%;
+	transition:all ease-in-out 250ms;
+}
+nav a:hover::before{
+	width:100%;
+}

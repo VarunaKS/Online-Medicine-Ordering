@@ -1,0 +1,41 @@
+.pimg1,.pimg2,.pimg3,.pimg4{
+	position:relative;
+	
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+}
+.pimg1{
+	background-image:url('brk2.jpeg');
+	height:600px;
+	width:100%;
+}
+.pimg2{
+	background-image:url('conct1.jpeg');
+	height:700px;
+	width:100%;
+	
+}
+.pimg3{
+	background-image:url('fam2.jpeg');
+	height:700px;
+	width:100%;
+	
+}
+.pimg4{
+	background-image:url('withu.jpeg');
+	height:700px;
+	width:100%;
+	
+}
+.section2,.section3,.section4{
+	
+	text-align:center;
+	font-family:Sans-serif;
+	font-size:35px;
+	position:relative;
+	margin-right:10px;
+	margin-left:1000px;
+	color:black;
+}

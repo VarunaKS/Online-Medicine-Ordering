@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="about.css" type="text/css"/>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+<title>CONTACT US</title>
+<style>
+#m{
+font-size:30px;
+
+}
+#s{padding:5px;background-color:#6699cc;font-family: 'Open Sans', sans-serif;font-weight:bold;font-size:20px;color:#0000ff;}span{
+	color:#6699cc;font-size:25px;}
+	#ap{
+	color:#0099cc;
+	}
+</style>
+</head>
+<body>
+<nav class="navbar">
+<span class="open">
+<a href="#" onclick="openslide()">
+<svg width="30" height="30">
+<path d="M0,5 30,5" stroke="#12908E" stroke-width="5"/>
+<path d="M0,14 30,14" stroke="#12908E" stroke-width="5"/>
+<path d="M0,23 30,23" stroke="#12908E" stroke-width="5"/></svg>
+</a>
+</span></nav>
+<div id="sidebar" class="side">
+<a href="#" class="close" onclick="closeslide()">&times;</a>
+<a href="hh1.php">HOME</a>
+<a href="about1.html">ABOUT</a>
+<a href="contact.html">CONTACT US</a>
+<a href="login.php">LOGIN/SIGNUP</a>
+</div>
+<div id="main">
+<h1>CONTACT US</h1>
+<h2 id="m">MAIL US</h2>
+	<p >TO KNOW MORE ABOUT THIS STORE PLEASE VISIT </br>ANY OF THE FOLLOWING EMAIL IDS: </p>
+	<ol style="padding-left:550px;">
+		<li><a class="l" href="google.html"target="_self">healthywealthy@gmail.com</a></li>
+		<li><a class="l" href="google1.html" target="_self">Letslivehealthy@yahoo.com</a></li>
+		<li><a class="l" href="google2.html"target="_self">asksomedoubt@gmail.com</a></li>
+	</ol>
+	
+	<h2 id="m">CALL US</h2>
+	<p>YOU CAN EVEN CONTACT US IN THE FOLLOWING NUMBERS<br/>9485437849 <br/>9367425794 <br/> 9357653098</p>
+	<p style>OFFICE TIMINGS ARE FROM :</br><br/> 8:30AM TO 8:30PM ON WEEKDAYS<br/> <br/> AND <br/>10:00AM TO 6:30PM ON WEEKENDS.<br/><br/>ALL GOVERNMENT HOLIDAYS INCLUDED</P> 
+	
+	<br/>
+	<h2  id="m">VISIT US!</h2>
+	IF YOU NEED TO MEET US THEN VISIT US AT OUR LOCATION
+	<form method="GET" action="new.php">
+	<input  id="ap" type="radio" name="place" value="LOCATIONS IN BANGALORE"><label id="ap">BANGALORE</label></input>
+	<input  id="ap" type="radio" name="place" value="LOCATIONS IN CHENNAI"><label id="ap">CHENNAI</label></input>
+	<input  id="ap" type="radio" name="place" value="LOCATIONS IN BOMBAY"><label id="ap">BOMBAY</label></input>
+	<input  id="ap" type="radio" name="place" value="LOCATIONS IN KOLKATA"><label id="ap">KOLKATA</label></input>
+	
+	
+	<input id="s" type="submit" value="FIND"/>
+	</form>
+	
+	<h2  id="m" >CLICK ON THE STATE TO FIND THE BRANCH NUMBER OF THAT STATE</h2>
+	<form method="GET" action="bn.php">
+	<input  id="ap" type="radio" name="place" value="BANGALORE"><label id="ap">BANGALORE</label></input>
+	<input  id="ap" type="radio" name="place" value="CHENNAI"><label id="ap">CHENNAI</label></input>
+	<input  id="ap" type="radio" name="place" value="BOMBAY"><label id="ap">BOMBAY</label></input>
+	<input  id="ap" type="radio" name="place" value="KOLKATA"><label id="ap">KOLKATA</label></input>
+	
+	<input id="s" type="submit" value="FIND"/>
+	</form>
+	</div>
+	<script>
+function openslide(){
+document.getElementById("sidebar").style.width="250px";
+document.getElementById("main").style.marginLeft="250px";
+}
+
+function closeslide(){
+document.getElementById('sidebar').style.width='0';
+document.getElementById('main').style.marginLeft='0';
+}
+
+</script>
+	</body>
+	</html>

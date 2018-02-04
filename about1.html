@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="about.css" type="text/css"/>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+<title>ABOUT US</title>
+<style>#hh{font-size:30px; color:#6699cc;} #tt{font-size:25px;} #main{margin:top:0;} h1{color:#ff3333;}</style>
+</head>
+<body>
+<nav class="navbar">
+<span class="open">
+<a href="#" onclick="openslide()">
+<svg width="30" height="30">
+<path d="M0,5 30,5" stroke="#12908E" stroke-width="5"/>
+<path d="M0,14 30,14" stroke="#12908E" stroke-width="5"/>
+<path d="M0,23 30,23" stroke="#12908E" stroke-width="5"/></svg>
+</a>
+</span></nav>
+<div id="sidebar" class="side">
+<a href="#" class="close" onclick="closeslide()">&times;</a>
+<a href="hh1.html">HOME</a>
+<a href="about1.html">ABOUT</a>
+<a href="contact.html">CONTACT US</a>
+<a href="login.html">LOGIN/SIGNUP</a>
+</div>
+<div id="main">
+<h1>ABOUT US</h1>
+This website was an attempt to reach out and make the avaliability of medicines much more easy
+ and simple to the general public and to help them get easy access to medicines.<br/> Through this website we hope we have reached all 
+ those who cannot actually go walking out to the store to buy the required medicines and hope that we have it made it easier 
+ for them to purchase and stock up on the medicines they require.<br/> This hope and attempt to help the public is what gave 
+ birth to this website:</p><p id="hh">"HEALING HANDS"</p> <p class="Hi" style="font-size:20px;">We hope that the public is really happy and pleased with our services and will continue to rely on us for their 
+ future medical requirements.
+ <p id="hh">We always endeavour to help you out.</p>
+ <h3>VALUES AND MISSION</h3>
+ <ol>
+<li >Easier access to medicines</li>
+<li >Faster access to the medicines</li>
+<li >Notify the general public about any and all discounts on medicines</li>
+<li >Help them buy even the most rarest of medicines</li>
+<li >Help in quick and fast delivery of medicines</li>
+</ol>
+<p id="tt"> This website consisited of the joint effort of three people namely: Varuna.K.S, Varshini.N and Yeshaswini.M. We
+	  sincerely hope you liked the website and were highly benefitted by it. We hope to reach out to even more people and help them 
+	  as much as we can.</p>
+</div>
+<script>
+function openslide(){
+document.getElementById("sidebar").style.width="250px";
+document.getElementById("main").style.marginLeft="250px";
+}
+
+function closeslide(){
+document.getElementById('sidebar').style.width='0';
+document.getElementById('main').style.marginLeft='0';
+}
+
+</script></body>
+</html>

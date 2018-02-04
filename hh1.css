@@ -1,0 +1,114 @@
+body{
+margin:0;
+font-family:Sans-serif;
+font-weight:bold;
+background-color: white;//#000099;//#00ccff;//#00cc99;//#cc99ff;//#ffcc99;//#97CECC;
+}
+.pimg1{
+	position:relative;
+	
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+}
+.pimg1{
+	background-image:url('brk2.jpeg');
+	height:600px;
+	width:100%;
+}
+
+.container{
+width:80%;
+margin:0 auto;
+
+}
+
+header{
+	background-color:white;
+	
+}
+
+.logo{
+	float:left;
+	height:100px;
+}
+nav{
+	float:right;
+}
+header::after{
+	content:'';
+	display:table;
+	clear:both;
+	
+}
+nav ul{margin:0;list-style:none;padding:0;}
+nav a{text-decoration:none;font-size:25px;color:#00ccff;}
+nav li{display:inline-block;
+margin-left:70px;
+padding-top:30px;
+position:relative;}
+nav a:hover{
+	color:#000099;
+}
+nav a::before{
+	content:'';
+	display:block;
+	height:5px;
+	width:100%;
+	background-color:#00ccff;
+	position:absolute;
+	top:0;
+	width:0%;
+	transition:all ease-in-out 250ms;
+}
+nav a:hover::before{
+	width:100%;
+}
+section ul{
+	margin:0;
+	padding:0;
+	display:flex;
+	position:relative;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	}
+section ul li{
+	list-style:none;
+	margin:0 15px;
+	padding-right:20px;
+}
+section ul li a{
+	position:relative;
+	display:block;
+	width:100px;
+	height:75px;
+	border-radius:50%;
+	font-size:20px;
+text-align:center;
+line-height:60px;
+background: #ccccff;
+
+
+color:#00ccff;
+transition:.5s;
+}
+section ul li a:before{
+	content:'';
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	border-radius:50%;
+	background:#000099;
+	transition:.5s;
+	transform:scale(.9);
+	z-index: -1;
+}
+section ul li a:hover:before{
+	transform:scale(1.1);}
+section ul li a:hover{color:#000099;
+}
+

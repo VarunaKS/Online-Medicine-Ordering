@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Forgotton Password??</title>
+	<link rel="stylesheet" href="about.css" type="text/css"/>
+	<link rel="stylesheet" href="login.css" type="text/css">
+</head>
+<body>
+<div id="main">
+<center>
+
+<h1 style="font-size:75px; font-family:Sans-serif; color:#000099"> Forgotton Password??</h1></center>
+<div class="haha">
+<div id="div">
+	<form action="return.php" method="GET">
+	<label style="padding-left:400px"> Just Type In Your Particulars To Get Your Password</label>
+	<br/>
+	<br/>
+	<label> UserName</label><br/>
+	<input  type="text" placeholder="Enter User Name" name="uname"/><br/>
+	<br/>
+
+	<label> E-mail</label><br/>
+	<input  type="email" placeholder="Enter E-mail" name="email"/><br/>
+	<br/>
+	<button type="submit" >Submit</button>
+	<div id="div" >
+	<a href="login.php" style="text-decoration:none;" ><button type="button" class="cancelbtn">Cancel</button></a>
+</div>
+</div>
+<script>
+function openslide(){
+document.getElementById("sidebar").style.width="250px";
+document.getElementById("main").style.marginLeft="250px";
+}
+
+function closeslide(){
+document.getElementById('sidebar').style.width='0';
+document.getElementById('main').style.marginLeft='0';
+}
+</script>
+</div>
+</form>
+</body>
+</html>

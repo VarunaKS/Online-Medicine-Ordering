@@ -1,0 +1,42 @@
+<DOCTYPE!html>
+<html>
+<head>
+</head>
+<body>
+<form id="for" method="GET" action="done.php">
+<label style="margin-top:40px;margin-right:60px;padding-right:30px;">TO</label>
+<label style="margin-top:40px;margin-left:0px;padding-right:300px;">Letslivehealthy@gmail.com</label>
+<br/>
+<br/>
+<label>FROM</label>
+<input required style="margin-top:40px;margin-left:50px;margin-right:60px;padding-right:300px;"type="email" name="mail"></input>
+<br/>
+<br/>
+<textarea id="hi" rows= "20" cols="170"  style="margin-top:40px;margin-left:50px;margin-right:60px;"></textarea>
+<br/>
+<br/>
+<input id="s" type="submit" value="SEND MAIL">
+</form>
+<input type="button" id="c" value="CANCEL">
+</body>
+</html>
+<script>
+	var su = document.getElementById("s");
+	su.addEventListener("click",check,false);
+	function check()
+	{
+	var ta=document.getElementById("hi");
+	if(ta.value=="")
+	{
+		alert("MESSAGE SAVED IN DRAFTS");
+		var form=document.getElementById("for");
+		form.action="contact.html";
+	}
+	}
+	var c=document.getElementById("c");
+	c.addEventListener("click",cancel,false);
+	function cancel()
+	{
+		location.replace("contact.html");
+	}
+</script>

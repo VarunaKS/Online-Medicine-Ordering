@@ -1,0 +1,39 @@
+#loader2,#loader{
+position:absolute;
+border: 5px solid transparent;
+border-radius:50%;
+}
+#loader{
+width:70px;
+height:70px;
+border-top:5px solid white;
+border-bottom:5px solid white;
+animation:clockwisespin 2s linear 3;
+}
+#loader2{
+width:70px;
+height:70px;
+border-left:5px solid #F98F45;
+border-right:5px solid #F98F45;
+top:5px;left:5px;
+animation:anticlockwisespin 2s linear 3;
+}
+#loader1{
+	width:20px;
+	height:70px;
+	margin:300px auto;
+	position:relative;
+	
+}
+@keyframes clockwisespin {
+	from{transform:rotate(0deg);}
+	to {transform:rotate(360deg);}
+}
+@keyframes anticlockwisespin {
+	from{transform:rotate(0deg);}
+	to {transform:rotate(-360deg);}
+}
+@keyframes fadeout {
+	from{opacity:1;}
+	to {opacity:0;}
+}

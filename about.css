@@ -1,0 +1,48 @@
+body{
+	font-family: 'Open Sans', sans-serif;font-weight:bold;font-size:20px;
+	background-color:	  #ccffff;
+	color: #006666;
+}
+.navbar{
+	
+	overflow:hidden;
+	height:63px;
+}
+
+.side{
+	height:100%;
+	width:0;
+	position:fixed;
+	z-index:1;
+	top:0;
+	left:0;
+	background-color:#97CECC;
+	opacity:0.9;
+	overflow-x:hidden;
+	padding-top:60px;
+	transition:0.5s;
+}
+.side a{
+	padding:10px 10px 10px 30px;
+	text-decoration:none;
+	font-size:22px;
+	color:#16594A;
+	display:block;
+	transition:0.3s;
+}
+.side a:hover{
+	color:#F98F45;
+}
+.side .close{
+	position:absolute;
+	top:0;
+	right:22px;
+	font-size:36px;
+	margin-left:50px;
+}
+#main{
+	transition:margin-left 0.5s;
+	padding:20px;
+	overflow:hidden;
+	
+}

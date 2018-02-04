@@ -1,0 +1,534 @@
+<html>
+<head>
+	<script>
+		function list()
+		{
+			var btn=document.querySelector("button");
+			var d1=document.createElement("div");
+			var btn1=document.createElement("button");
+			var t = document.createTextNode("STYLE SHEET");
+			btn1.appendChild(t);
+			var btn2=document.createElement("button");
+			var t1=document.createTextNode("APPEND THE ELEMENTS");
+			btn2.appendChild(t1);
+			var btn3=document.createElement("button");
+			var t="SAVE";
+			btn3.innerHTML=t;
+			document.body.removeChild(document.getElementById("bdel"));
+			d1.appendChild(btn1);
+			d1.appendChild(document.createElement("br"));
+			d1.appendChild(document.createElement("br"));
+			d1.appendChild(btn2);
+			d1.appendChild(document.createElement("br"));
+			d1.appendChild(document.createElement("br"));
+			d1.appendChild(btn3);
+			document.body.appendChild(d1);
+			btn1.addEventListener("click",ss,false);
+			btn2.addEventListener("click",ate,false);	
+			btn3.addEventListener("click",sav,false);
+			var d12=document.createElement("div");
+			document.body.appendChild(d12);
+			var c=0;
+			function sav()
+			{
+				d1.removeChild(btn1);
+				d1.removeChild(btn2);
+				d1.removeChild(btn3);
+				var b234=document.createElement("button");
+				b234.innerHTML="SUBMIT";
+				b234.style.marginLeft="500";
+				document.body.appendChild(b234);
+			}
+		function ss()
+		{
+			var d2=document.createElement("div");
+			var d4=document.createElement("div");
+			var d5=document.createElement("div");
+			var d6=document.createElement("div");
+			var b1=document.createElement("button");
+			var b2=document.createElement("button");
+			var b3=document.createElement("button");
+			var btn4=document.createElement("button");
+			var btn5=document.createElement("button");
+			var btn7=document.createElement("button");
+			btn7.innerHTML="CHANGE FONT COLOR ";
+			var t4="UNDO ALL CHANGES";
+			var t5="BACK";
+			var t1="CHANGE BACKGROUNDCOLOUR";
+			var t2="CHANGE TO ITALICS";
+			var t3="CHANGE TO BOLD";
+			btn4.innerHTML=t4;
+			btn5.innerHTML=t5;
+			b1.innerHTML=t1;
+			b2.innerHTML=t2;
+			b3.innerHTML=t3;
+			d6.appendChild(b1);
+			d6.appendChild(document.createElement("br"));
+			d6.appendChild(document.createElement("br"));
+			d6.appendChild(btn7);
+			d6.appendChild(document.createElement("br"));
+			d6.appendChild(document.createElement("br"));
+			d2.appendChild(d6);
+			d4.appendChild(b2);
+			d4.appendChild(document.createElement("br"));
+			d4.appendChild(document.createElement("br"));
+			d2.appendChild(d4);
+			d5.appendChild(b3);
+			d5.appendChild(document.createElement("br"));
+			d5.appendChild(document.createElement("br"));
+			d2.appendChild(d5);
+			d2.appendChild(btn4);
+			d2.appendChild(document.createElement("br"));
+			d2.appendChild(document.createElement("br"));
+			d2.appendChild(btn5);
+			d2.appendChild(document.createElement("br"));
+			d2.appendChild(document.createElement("br"));
+			document.body.insertBefore(d2,d1);
+			d2.appendChild(document.createElement("br"));
+			b1.addEventListener("click",bc,false);
+			b2.addEventListener("click",it,false);
+			b3.addEventListener("click",bo,false);
+			btn4.addEventListener("click",undo,false);
+			btn5.addEventListener("click",bak,false);
+			btn7.addEventListener("click",fc,false);
+			
+			function fc()
+			{
+			var dive=document.createElement("div");
+			var bn1=document.createElement("button");
+			var bn2=document.createElement("button");
+			var bn3=document.createElement("button");
+			var bn4=document.createElement("button");
+			var bn5=document.createElement("button");
+			var bn6=document.createElement("button");
+			var bn7=document.createElement("button");
+			var bn8=document.createElement("button");
+			var bn9=document.createElement("button");
+			bn1.innerHTML="GREEN";
+			bn2.innerHTML="RED";
+			bn3.innerHTML="BLUE";
+			bn4.innerHTML="PURPLE";
+			bn5.innerHTML="PINK";
+			bn6.innerHTML="WHITE";
+			bn7.innerHTML="YELLOW";
+			bn8.innerHTML="ORANGE";
+			bn9.innerHTML="BACK";
+			dive.appendChild(bn1);
+			dive.appendChild(bn2);
+			dive.appendChild(document.createElement("br"));
+			dive.appendChild(document.createElement("br"));
+			dive.appendChild(bn3);
+			dive.appendChild(bn4);
+			dive.appendChild(document.createElement("br"));
+			dive.appendChild(document.createElement("br"));
+			dive.appendChild(bn5);
+			dive.appendChild(bn6);
+			dive.appendChild(document.createElement("br"));
+			dive.appendChild(document.createElement("br"));
+			dive.appendChild(bn7);
+			dive.appendChild(bn8);
+			dive.appendChild(document.createElement("br"));
+			dive.appendChild(document.createElement("br"));
+			dive.appendChild(bn9);
+			document.body.removeChild(d1);
+			document.body.removeChild(d2);
+			document.body.insertBefore(dive,d12);
+			bn1.addEventListener("click",green,false);
+			bn2.addEventListener("click",red,false);
+			bn3.addEventListener("click",blue,false);
+			bn4.addEventListener("click",purple,false);
+			bn5.addEventListener("click",pink,false);
+			bn6.addEventListener("click",white,false);
+			bn7.addEventListener("click",yellow,false);
+			bn8.addEventListener("click",orange,false);
+			bn9.addEventListener("click",back,false);
+			
+			function green()
+			{
+				document.body.style.color="green";
+			}
+			function red()
+			{
+				document.body.style.color="red";
+			}
+			function blue()
+			{
+				document.body.style.color="blue";
+			}
+			function purple()
+			{
+				document.body.style.color="#660066";
+			}
+			function pink()
+			{
+				document.body.style.color="#ff33cc";
+			}
+			function white()
+			{
+				document.body.style.color="white";
+			}
+			function yellow()
+			{
+				document.body.style.color="yellow";
+			}
+			function orange()
+			{
+				document.body.style.color="#ff6600";
+			}
+			function back()
+			{
+				document.body.removeChild(dive);
+				document.body.insertBefore(d1,d12);
+			}
+			
+			}
+			
+			
+			function bak()
+			{
+				document.body.removeChild(d2);
+				document.body.insertBefore(d1,d12);
+			}
+			
+			function undo()
+			{
+					document.body.style.backgroundColor="white";
+					document.body.style.fontStyle="normal";
+					document.body.style.fontWeight="normal";
+					document.body.style.color="black";
+			}
+			
+			function bc()
+			{
+				var d3=document.createElement("div");
+				var b4=document.createElement("button");
+				var b5=document.createElement("button");
+				var b6=document.createElement("button");
+				var b7=document.createElement("button");
+				var b8=document.createElement("button");
+				var b9=document.createElement("button");
+				var b10=document.createElement("button");
+				var b11=document.createElement("button");
+				var b12=document.createElement("button");
+				b8.innerHTML="PURPLE";
+				b4.innerHTML="BLUE";
+				b4.id="b";
+				b5.innerHTML="GREEN";
+				b9.innerHTML="ORANGE";
+				b5.id="b";
+				b6.innerHTML="RED";
+				b10.innerHTML="BLACK";
+				b11.innerHTML="YELLOW";
+				b12.innerHTML="PINK";
+				b6.id="b";
+				b7.innerHTML="BACK";
+				b7.id="b";
+				d3.appendChild(b4);
+				d3.appendChild(b8);
+				d3.appendChild(document.createElement("br"));
+				d3.appendChild(document.createElement("br"));
+				d3.appendChild(b5);
+				d3.appendChild(b9);
+				d3.appendChild(document.createElement("br"));
+				d3.appendChild(document.createElement("br"));
+				d3.appendChild(b6);
+				d3.appendChild(b10);
+				d3.appendChild(document.createElement("br"));
+				d3.appendChild(document.createElement("br"));
+				d3.appendChild(b11);
+				d3.appendChild(b12);
+				d3.appendChild(document.createElement("br"));
+				d3.appendChild(document.createElement("br"));
+				d3.appendChild(b7);
+				document.body.insertBefore(d3,d1);
+				document.body.removeChild(d2);
+				document.body.removeChild(d1);
+				b4.addEventListener("click",blue,false);
+				b5.addEventListener("click",green,false);
+				b6.addEventListener("click",red,false);
+				b8.addEventListener("click",purple,false);
+				b9.addEventListener("click",orange,false);
+				b10.addEventListener("click",black,false);
+				b11.addEventListener("click",yellow,false);
+				b12.addEventListener("click",pink,false);
+				b7.addEventListener("click",add,false);
+				function add()
+				{
+					document.body.removeChild(d3);
+					document.body.insertBefore(d1,d12);
+				}
+				function blue()
+				{
+					document.body.style.backgroundColor="blue";
+				}
+				function green()
+				{
+					document.body.style.backgroundColor="green";
+				}
+				
+				function purple()
+				{
+					document.body.style.backgroundColor="#660066";
+				}
+				function orange()
+				{
+					document.body.style.backgroundColor="#ff6600";
+				}
+				function black()
+				{
+					document.body.style.backgroundColor="black";
+				}
+				function yellow()
+				{
+					document.body.style.backgroundColor="yellow";
+				}
+				function pink()
+				{
+					document.body.style.backgroundColor="pink";
+				}
+				function red()
+				{
+					document.body.style.backgroundColor="red";
+				}	
+			}
+			
+			function it()
+			{
+				document.body.style.fontStyle="italic";
+			}
+			
+			function bo()
+			{
+				document.body.style.fontWeight="bold";
+			}
+		}
+		
+		function ate()
+		{
+			var d7=document.createElement("div");
+			var d8=document.createElement("div");
+			var d9=document.createElement("div");
+			var d13=document.createElement("div");
+			var d10=document.createElement("div");
+			var bt1=document.createElement("button");
+			var bt2=document.createElement("button");
+			var bt3=document.createElement("button");
+			var bt4=document.createElement("button");
+			var bt5=document.createElement("button");
+			var bt6=document.createElement("button");
+			var t4="BACK";
+			var t1="ADD TEXT BOX";
+			var t2="ADD RADIO BUTTON";
+			var t3="ADD EMAIL";
+			var t5="UNDO";
+			var t6="ADD CHECKBOX";
+			bt6.innerHTML=t6;
+			bt1.innerHTML=t1;
+			bt2.innerHTML=t2;
+			bt3.innerHTML=t3;
+			bt4.innerHTML=t4;
+			bt5.innerHTML=t5;
+			d8.appendChild(bt1);
+			d8.appendChild(document.createElement("br"));
+			d8.appendChild(document.createElement("br"));
+			d7.appendChild(d8);
+			d9.appendChild(bt2);
+			d9.appendChild(document.createElement("br"));
+			d9.appendChild(document.createElement("br"));
+			d7.appendChild(d9);
+			d10.appendChild(bt3);
+			d10.appendChild(document.createElement("br"));
+			d10.appendChild(document.createElement("br"));
+			d10.appendChild(bt6);
+			d10.appendChild(document.createElement("br"));
+			d10.appendChild(document.createElement("br"));
+			d7.appendChild(d10);
+			d13.appendChild(bt4);
+			d13.appendChild(document.createElement("br"));
+			d13.appendChild(document.createElement("br"));
+			d13.appendChild(bt5);
+			d13.appendChild(document.createElement("br"));
+			d13.appendChild(document.createElement("br"));
+			d7.appendChild(d13);
+			document.body.insertBefore(d7,d1);
+			d7.appendChild(document.createElement("br"));
+			bt1.addEventListener("click",cretbk,false);
+			bt2.addEventListener("click",cretrb,false);
+			bt3.addEventListener("click",creted,false);
+			bt4.addEventListener("click",add2,false);
+			bt5.addEventListener("click",un,false);
+			bt6.addEventListener("click",cbk,false);
+			
+			function cbk()
+			{
+	
+				var d14=document.createElement("div");
+				var he=document.createElement("label");
+				he.innerHTML=prompt("ENTER THE HEADING FOR THE CHECKBOX");
+				he.style.marginTop="40";
+				he.style.marginLeft="400";
+				d14.appendChild(he);
+				var cou=prompt("ENTER THE NUMBER OF OPTIONS");
+				d14.appendChild(document.createElement("br"));
+				for(var m=1;m<=cou;m++)
+				{
+					var ch=document.createElement("input");
+					ch.type="checkbox";
+					ch.id=cou;
+					var bl=document.createElement("label");
+					bl.innerHTML=prompt("ENTER OPTION NUMBER "+m); 
+					bl.paddingLeft="400";
+					ch.style.marginTop="30";
+					ch.style.marginBottom="30";
+					bl.style.marginBottom="30";
+					if(m==1)
+					{
+					ch.style.marginLeft="500";
+					}
+					else
+					{
+					ch.style.marginLeft="50";
+					}
+					ch.style.paddingLeft="0";
+					d14.appendChild(ch);
+					d14.appendChild(bl);
+				}
+				i++;
+				if(i==1)
+				{
+				document.body.removeChild(d1);
+				}
+				
+					document.body.appendChild(d14);
+					
+			}
+			
+			
+			
+			function un()
+			{
+				if(document.body.children!="/br")
+				{
+				document.body.removeChild(document.body.lastChild);
+				}
+			}
+			function add2()
+			{
+				document.body.removeChild(d7);
+				document.body.insertBefore(d1,d12);
+			}			
+			var i=0;
+			function cretbk()
+			{
+				var d11=document.createElement("div");
+				var t=document.createElement("input");
+				t.type="text";
+				var lll=document.createElement("label");
+				var tex=prompt("ENTER THE NAME OF THE TEXTBOX: ");
+				var ltb=document.createElement("label");
+				ltb.innerHTML=tex;
+				var spac="    ";
+				c=c+1;
+				ltb.style.paddingTop="30";
+				ltb.style.paddingLeft="400";
+				d11.appendChild(ltb);
+				d11.appendChild(lll);
+				t.style.marginTop="30";
+				t.style.marginBottom="30";
+				t.style.paddingRight="300";
+				t.style.marginLeft="40";
+				d11.appendChild(t);
+				document.body.appendChild(d11);
+				i++;
+				if(i==1)
+				{
+				document.body.removeChild(d1);
+				}
+				
+			}	
+			function cretrb()
+			{
+				var div1=document.createElement("div");
+				var b=document.createElement("input");
+				var i=prompt("ENTER THE HEADING: ");
+				var lb=document.createElement("label");
+				lb.innerHTML=i;
+				lb.style.marginTop="400";
+				lb.style.marginLeft="400";
+				div1.appendChild(lb);
+				div1.appendChild(document.createElement("br"));
+				var ind=prompt("ENTER THE NUMBER OF OPTIONS: ");
+				for(var d=1;d<=ind;d++)
+				{
+					var r=0;
+					var rd=document.createElement("input");
+					rd.type="radio";
+					rd.value=d;
+					rd.id=r;
+					rd.name=r;
+					var k = prompt("ENTER THE OPTION"+d);
+					var l=document.createElement("label");
+					l.innerHTML=k;
+					l.style.marginTop="30";
+					rd.style.marginTop="30";
+					rd.style.marginBottom="30";
+					l.style.marginBottom="30";
+					if(d==1)
+					{
+					rd.style.marginLeft="500";
+					}
+					else
+					{
+					rd.style.marginLeft="50";
+					}
+					rd.style.paddingLeft="0";
+					div1.appendChild(rd);
+					div1.appendChild(l);
+				}
+				c=c+1;
+				i++;
+				if(i==1)
+				{
+				document.body.removeChild(d1);
+				}
+				
+				document.body.appendChild(div1);
+				
+			}
+						
+			function creted()
+			{
+				var div2=document.createElement("div");
+				//document.body.appendChild(document.createElement("br"));
+				//document.body.appendChild(document.createElement("br"));
+				//document.body.appendChild(document.createElement("br"));
+				var lb2=document.createElement("label");
+				lb2.innerHTML="EMAIL ID";
+				var di=document.createElement("input");
+				di.type="email";
+				di.name="mail";
+				lb2.style.marginTop="30";
+				lb2.style.paddingLeft="400";
+				di.style.marginTop="30";
+				di.style.marginLeft="40";
+				di.style.paddingRight="300";
+				lb2.style.marginBottom="30";
+				di.style.marginBottom="30";
+				div2.appendChild(lb2);
+				div2.appendChild(di);
+				document.body.appendChild(div2);
+				c=c+1;
+				i++;
+				if(i==1)
+				{
+				document.body.removeChild(d1);
+				}
+				}
+		}
+		}
+	</script>
+</head>
+<body>
+	<button type="button" id="bdel" onclick=list()>CREATE A FORM</button>
+</body>
+</html>

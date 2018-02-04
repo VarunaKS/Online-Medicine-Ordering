@@ -1,0 +1,13 @@
+.tof{
+	position:relative;
+	
+	background-position:center;
+	background-repeat:no-repeat;
+	
+	background-attachment:fixed;
+}
+.tof{
+background-image:url('hey.jpeg');
+height:550px;
+width:100%;
+}
